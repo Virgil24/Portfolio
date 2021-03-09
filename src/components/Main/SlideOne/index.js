@@ -1,11 +1,10 @@
 import React from 'react';
-import { Bounce } from 'react-awesome-reveal';
 
 import './styles.scss';
 import virgil from './virgilfinal.png';
 
 const SlideOne = () => (
-  <div className="first__slide">
+  <div id="first__slide">
     <h1 className="presentation">Virgil Kwiatkowski</h1>
     <h2 className="presentation__subtitle">Developpeur Web FullStack Junior</h2>
     <div className="container__card">

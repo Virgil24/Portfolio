@@ -1,5 +1,5 @@
 @use "src/styles/vars" as v;
-.first__slide {
+#first__slide {
     font-family: 'Newsreader';
 }
 .presentation {
@@ -11,10 +11,10 @@
     text-transform: uppercase;
     &__subtitle {
         font-size: 2rem;
-    letter-spacing: 0.5rem;
-    color : #ccc;
-    text-transform: uppercase;
-    margin-left: 6rem;
+        letter-spacing: 0.5rem;
+        color : #ccc;
+        text-transform: uppercase;
+        text-align: center;
     }
 }
 .container__card {
@@ -28,8 +28,8 @@
 }
 .card {
     position: relative;
-    width: 700px;
-    height: 375px;
+    width: 45%;
+    height: 20%;
     border-radius: 20px;
     display: flex;
     align-items: center;

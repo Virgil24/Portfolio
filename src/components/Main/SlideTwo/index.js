@@ -20,12 +20,15 @@ const SlideTwo = ({
     }
     handleVideoLauncher(active);
   };
+
   return (
-    <div className="second__slide">
-      {projects.map((project) => (
+    <div id="second__slide">
+      {projects.map((project) => {
+        console.log(project.picture);
+        return(
         <div className="hexagon" key={project.id}>
           <div className="shape front">
-            <img className="projects__picture" src={amanger} alt="todolist project" />
+            <img className="projects__picture" src={project.picture} alt="todolist project" />
           </div>
           <div className="shape back">
             <div className="hexagon__content">
@@ -39,7 +42,7 @@ const SlideTwo = ({
             </div>
           </div>
         </div>
-      ))}
+      )})}
       {!toggle && (
         <div className={toggleClassName}>
           <video className="video__projects" src={todolist} type="video/mp4" autoPlay controls>

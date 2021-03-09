@@ -1,0 +1,18 @@
+.navigation {
+    display: flex;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    position: fixed;
+    font-size: 1.1rem;
+    width: 100vw;
+    transform : rotate(90deg) translateY(-11vh);
+    //change translatey for responsive
+    transform-origin: top left;
+    z-index: 10;
+    &__item {
+        display: flex;
+        list-style: none;
+        margin: 3rem 2rem;
+    }
+}
