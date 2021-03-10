@@ -1,11 +1,12 @@
+/* eslint-disable max-len */
 import React from 'react';
 
 import './styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faTimes } from '@fortawesome/free-solid-svg-icons';
+// import todo from '../../../data/todo.png';
 import todolist from './todolist.mp4';
-import todolistPic from './todo.png';
-import amanger from './amanger.png';
+// import todo2 from './amanger.png';
 
 const SlideTwo = ({
   handleVideoLauncher, toggleClassName, toggle, projects,
@@ -20,12 +21,9 @@ const SlideTwo = ({
     }
     handleVideoLauncher(active);
   };
-
   return (
     <div id="second__slide">
-      {projects.map((project) => {
-        console.log(project.picture);
-        return(
+      {projects.map((project) => (
         <div className="hexagon" key={project.id}>
           <div className="shape front">
             <img className="projects__picture" src={project.picture} alt="todolist project" />
@@ -38,11 +36,11 @@ const SlideTwo = ({
                 <p>{project.stackFront}</p>
                 <p>{project.stackBack}</p>
               </div>
-              <p>Apperçu du projet   <FontAwesomeIcon icon={faPlay} onClick={launchVideoOnClick} /></p>
+              <p>Apperçu du projet<FontAwesomeIcon icon={faPlay} onClick={launchVideoOnClick} /></p>
             </div>
           </div>
         </div>
-      )})}
+      ))}
       {!toggle && (
         <div className={toggleClassName}>
           <video className="video__projects" src={todolist} type="video/mp4" autoPlay controls>

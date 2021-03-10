@@ -3,6 +3,7 @@ import SlideOne from 'src/components/Main/SlideOne';
 import SlideOneToTwo from 'src/components/Main/SlideOneToTwo';
 import Nav from 'src/components/Main/Nav';
 import SlideTwo from 'src/containers/SlideTwo';
+import SlideFour from 'src/containers/SlideFour';
 import projectsData from 'src/data/projects';
 
 
@@ -16,6 +17,7 @@ const Main = () => (
       <SlideOne />
       <SlideOneToTwo />
       <SlideTwo projects={projectsData} />
+      <SlideFour />
       <div className="slide three" />
       <div className="slide four" />
     </div>

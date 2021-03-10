@@ -14,7 +14,7 @@ export default [
     description: 'Application qui permet de lister des tâches, les marquer comme actives ou incatives, les modifier et supprimer',
     stackFront: 'ReactJs - Redux - Sass',
     stackBack: '',
-    picture: './src/data/todo.png',
+    picture: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
 
   },
   {
