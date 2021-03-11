@@ -8,7 +8,7 @@ const SlideOneToTwo = () => (
       <span className="second__slide__span" />
       <span className="second__slide__span" />
       <div className="second__slide__content">
-        <h2 className="second__slide__title">Mes Premiers Projets ...</h2>
+        <h2 className="second__slide__title">Mes compétences ...</h2>
       </div>
     </div>
   </div>

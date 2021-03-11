@@ -15,8 +15,8 @@ const Main = () => (
   <div className="outer-wrapper">
     <div className="outer-wrapper__wrapper">
       <SlideOne />
-      <SlideOneToTwo />
       <SlideTwo projects={projectsData} />
+      <SlideOneToTwo />
       <SlideFour />
       <div className="slide three" />
       <div className="slide four" />
