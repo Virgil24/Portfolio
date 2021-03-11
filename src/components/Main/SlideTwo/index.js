@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.scss';
+import PropTypes from 'prop-types';
 
 const SlideTwo = ({ projects }) => (
   <div className="second__slide">
@@ -16,4 +17,16 @@ const SlideTwo = ({ projects }) => (
   </div>
 );
 
+SlideTwo.propTypes = {
+  projects: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      title: PropTypes.string,
+      description: PropTypes.string,
+      stackFront: PropTypes.string,
+      stackBack: PropTypes.string,
+      picture: PropTypes.string,
+    }).isRequired,
+  ).isRequired,
+};
 export default SlideTwo;

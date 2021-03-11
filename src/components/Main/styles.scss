@@ -7,18 +7,6 @@ body {
     width: 100vw;
     height: 100vh;
 }
-.wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 400vw;
-    transform : rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
-
-}
-
 .outer-wrapper {
     width: 100vh;
     height: 100vw;
@@ -29,7 +17,16 @@ body {
     position: absolute;
     scrollbar-width: none;
     -ms-overflow-style: none;
-
+    &__wrapper{
+        display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform : rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    }
 }
 ::-webkit-scrollbar {
     display: none;
