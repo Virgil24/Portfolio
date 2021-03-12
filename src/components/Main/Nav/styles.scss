@@ -5,7 +5,9 @@
     text-transform: uppercase;
     position: fixed;
     font-size: 1.1rem;
-    width: 100vw;
+    min-width: 100vw;
+    height: 60vh;
+    left:0;
     transform : rotate(90deg) translateY(-11vh);
     //change translatey for responsive
     transform-origin: top left;

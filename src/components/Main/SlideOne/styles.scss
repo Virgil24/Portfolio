@@ -94,7 +94,7 @@
             }
         }
         &__card:hover .slide__one__container__card__circle:before {
-            background: rgb(5, 89, 168);
+            background: #95060F;
             clip-path: circle(600px at center);
         }
         &__card:hover .slide__one__container__card__picture {
@@ -107,4 +107,7 @@
             visibility: visible;
         }
     }
+}
+.contact {
+    
 }
