@@ -8,7 +8,6 @@ const Cursor = () => {
     document.addEventListener('mousemove', (event) => {
       const { clientX, clientY } = event;
       const mouseX = clientX - (cursorRef.current.clientWidth / 2);
-      console.log(mouseX);
       const mouseY = clientY - (cursorRef.current.clientHeight / 2);
       cursorRef.current.style.transform = `translate3d(${mouseX}px,${mouseY}px, 0)`;
     });
