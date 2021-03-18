@@ -6,15 +6,16 @@ const mapStateToProps = (state) => (
   {
     backgroundColor: state.projectReducer.backgroundColor,
     color: state.projectReducer.color,
+    visibility: state.projectReducer.visibility,
   });
 
 const mapDispatchToProps = (dispatch) => ({
   onMouseChangeColor: () => {
     dispatch(onMouseChangeColor());
   },
-	onMouseLeftHover: () => {
-		dispatch(onMouseLeftHover());
-	}
+  onMouseLeftHover: () => {
+    dispatch(onMouseLeftHover());
+  },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SlideThree);

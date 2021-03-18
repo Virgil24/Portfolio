@@ -2,6 +2,7 @@ import { CHANGE__COLOR__HOVER, LEFT_HOVER } from '../actions/slideThree';
 
 export const initialState = {
   backgroundColor: 'black',
+  visibility: 'hidden',
 };
 
 const projectReducer = (state = initialState, action = {}) => {
@@ -10,6 +11,8 @@ const projectReducer = (state = initialState, action = {}) => {
       return {
         ...state,
         backgroundColor: 'white',
+        visibility: 'visible',
+
       };
     case LEFT_HOVER:
       return {
