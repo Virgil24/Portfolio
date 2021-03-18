@@ -1,5 +1,5 @@
 @use "src/styles/vars" as v;
-.all {
+.slideFive {
     position: relative;
     min-height: 100vh;
     min-width: 100vw;
@@ -12,142 +12,130 @@
     background-size: cover;
     margin-bottom: 30%;
     font-family: 'NewsReader';
-}
-.contentform {
-    max-width: 70%;
-    text-align: center;
-    margin-bottom: 5rem;
+    &__contentForm{
+        max-width: 70%;
+        text-align: center;
+        margin-bottom: 5rem;
+        &__title{
+            font-size: 3rem;
+            font-weight: 500;
+            color : #000;
+            text-transform: uppercase;
+            margin-bottom: 6rem;
+            letter-spacing: 1.2rem;
+        }
+        &__text{
+            font-weight: 300;
+            font-size: 1.2rem;
+            color : #333;
+            line-height: 1.5rem;
+            text-align: justify;
+            &__link{
+                color:#00bcd4;
+            }
+        }
+    }
+    &__contain{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        border-left: 1px solid #333;
+        &__contactInfos{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            &__box{
+                position: relative;
+                padding : 20px 0;
+                display: flex;
+                &__icon{
+                    min-width: 60px;
+                    height: 60px;
+                    background: #fff;
+                    border:#333 solid 1px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    font-size: 22px;
+                }
+                &__text{
+                    display: flex;
+                    margin-left: 20px;
+                    font-size: 16px;
+                    color: #333;
+                    flex-direction: column;
+                    font-weight: 300;
+                    &__title{
+                        font-weight: 500;
+                        color: #00bcd4;
+                    }
+                }
+            }
+        }
+        &__contactForm{
+            width: 40%;
+            padding: 40px;
+            background: #333;
+            min-height: 100%;
+            color:white;
+            cursor:none;
+            &__title{
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                margin-bottom: 2rem;
+                color: #00bcd4;
+                font-weight: 500;
+            }
+            &__inputBox{
+                position: relative;
+                width: 100%;
+                margin-top: 10px;
+                padding: 5px;
+                font-size: 16px;
+                margin:10px ;
+                border : none;
+                margin-bottom: 0.5rem;
+                outline: none;
+                resize: none;
+                color:#333;
+                &__formInput{
+                    width: 100%;
+                    padding: 5px 0;
+                    border : none;
+                    border-bottom: 2px solid #fff;
+                    outline:none;
+                    resize: none;
+                    background: #333;
+                    color:#eee
+                }
+                &__span{
+                    left:0;
+                    padding: 5px 0;
+                    font-size: 1.2rem;
+                    margin: 0.5rem 0;
+                    pointer-events: none;
+                    transition: 0.5s;
+                    color: #00bcd4;
+                    font-size: 0.8rem;
+                }
+            }
+            &__inputButton{
+                margin: 1rem 0;
+                &__message{
+                    width: 30%;
+                    background: #00bcd4;
+                    color:#fff;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px;
+                    cursor: none;
+                }
+            }        
+        }
+    }
 }
 
-.contentform h2 {
-    font-size: 3rem;
-    font-weight: 500;
-    color : #000;
-    text-transform: uppercase;
-    margin-bottom: 6rem;
-    letter-spacing: 1.2rem;
-}
-.contentform p {
-    font-weight: 300;
-    font-size: 1.2rem;
-    color : #333;
-    line-height: 1.5rem;
-    text-align: justify;
-}
-.contentform a {
-    color:#00bcd4;
-}
-
-.contain {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    border-left: 1px solid #333;
-}
-.contactInfos {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-.box{
-    position: relative;
-    padding : 20px 0;
-    display: flex;
-}
-.icon {
-    min-width: 60px;
-    height: 60px;
-    background: #fff;
-    border:#333 solid 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 22px;
-}
-.text {
-    display: flex;
-    margin-left: 20px;
-    font-size: 16px;
-    color: #333;
-    flex-direction: column;
-    font-weight: 300;
-}
-.text h3 {
-    font-weight: 500;
-    color: #00bcd4;
-}
-
-.contactForm{
-    width: 40%;
-    padding: 40px;
-    background: #333;
-    min-height: 100%;
-    color:white;
-    cursor:none;
-}
-.contactForm h5 {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    color: #00bcd4;
-    font-weight: 500;
-}
-.contactForm .inputBox{
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
-    padding: 5px;
-    font-size: 16px;
-    margin:10px ;
-    border : none;
-    border-bottom: 2px solid white;
-    margin-bottom: 0.5rem;
-
-    outline: none;
-    resize: none;
-    color:#333;
-
-}
-
-.formInput {
-    width: 100%;
-    padding: 5px 0;
-    font-size: 1.1rem;
-    border : none;
-    border-bottom: 2px solid #fff;
-    outline:none;
-    resize: none;
-    background: #333;
-    color:#eee
-}
-
-.form__span {
-    left:0;
-    padding: 5px 0;
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-    pointer-events: none;
-    transition: 0.5s;
-    color: #eee;
-}
-.formInput:focus ~ .form__span {
-    color: #00bcd4;
-    font-size: 0.8rem;
-    transform: translateY(-20px);
-}
-.formInput:valid ~ .form__span {
-    color: #00bcd4;
-    font-size: 0.8rem;
-    transform: translateY(-20px);
-}
-.inputButton {
-    width: 30%;
-    background: #00bcd4;
-    color:#fff;
-    border: none;
-    padding: 10px;
-    font-size: 18px;
-}
+// MEDIA QUERIES 

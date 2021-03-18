@@ -36,42 +36,42 @@ const SlideFive = () => {
   };
 
   return (
-    <div className="all" id="contact">
-      <div className="contentform">
-        <h2 className="content__title">Me contacter</h2>
-        <p>Je suis aujourd'hui à la recherche d'une alternance afin d'intégrer la licence proffessionnelle <a href="https://iut.uca.fr/formations/lp-metiers-du-numerique-conception-redaction-et-realisation-web">Conception, rédaction et réalisation web : option développement web</a> pour l'année académique 2021-2022 (Septembre-Juin), n'hésitez pas à me contacter pour tout renseignement que vous souhaiteriez obtenir. <br /><br /> Je suis également disponible pour discuter de tout ce qui tourne autour du développement.
+    <div className="slideFive" id="contact">
+      <div className="slideFive__contentForm">
+        <h2 className="slideFive__contentForm__title">Me contacter</h2>
+        <p className="slideFive__contentForm__text">Je suis aujourd'hui à la recherche d'une alternance afin d'intégrer la licence proffessionnelle <a className="slideFive__contentForm__text__link" href="https://iut.uca.fr/formations/lp-metiers-du-numerique-conception-redaction-et-realisation-web">Conception, rédaction et réalisation web : option développement web</a> pour l'année académique 2021-2022 (Septembre-Juin), n'hésitez pas à me contacter pour tout renseignement que vous souhaiteriez obtenir. <br /><br /> Je suis également disponible pour discuter de tout ce qui tourne autour du développement.
         </p>
       </div>
-      <div className="contain">
-        <div className="contactInfos">
-          <div className="box">
-            <div className="icon"><FontAwesomeIcon icon={faMapMarkerAlt} /></div>
-            <div className="text">
-              <h3>Adresse</h3>
-              <p>Boulevard Carnot, Le-Puy-En-Velay <br />43000 <br />Le-Puy-En-Velay</p>
+      <div className="slideFive__contain">
+        <div className="slideFive__contain__contactInfos">
+          <div className="slideFive__contain__contactInfos__box">
+            <div className="slideFive__contain__contactInfos__box__icon"><FontAwesomeIcon icon={faMapMarkerAlt} /></div>
+            <div className="slideFive__contain__contactInfos__box__text">
+              <h3 className="slideFive__contain__contactInfos__box__text__title">Adresse</h3>
+              <p className="slideFive__contain__contactInfos__box__text__content">Boulevard Carnot, Le-Puy-En-Velay <br />43000 <br />Le-Puy-En-Velay</p>
             </div>
           </div>
-          <div className="box">
-            <div className="icon"><FontAwesomeIcon icon={faPhone} /></div>
-            <div className="text">
-              <h3>Téléphone</h3>
-              <p> <a href="tel:0665083567" /> 06.65.08.35.67 </p>
+          <div className="slideFive__contain__contactInfos__box">
+            <div className="slideFive__contain__contactInfos__box__icon"><FontAwesomeIcon icon={faPhone} /></div>
+            <div className="slideFive__contain__contactInfos__box__text">
+              <h3 className="slideFive__contain__contactInfos__box__text__title">Téléphone</h3>
+              <p className="slideFive__contain__contactInfos__box__text__content"> <a href="tel:0665083567" /> 06.65.08.35.67 </p>
             </div>
           </div>
-          <div className="box">
-            <div className="icon"><FontAwesomeIcon icon={faEnvelope} /></div>
-            <div className="text">
-              <h3>Email</h3>
-              <p> <a href="mailto:kwiatkowski.virgil@gmail.com" />
+          <div className="slideFive__contain__contactInfos__box">
+            <div className="slideFive__contain__contactInfos__box__icon"><FontAwesomeIcon icon={faEnvelope} /></div>
+            <div className="slideFive__contain__contactInfos__box__text">
+              <h3 className="slideFive__contain__contactInfos__box__text__title">Email</h3>
+              <p className="slideFive__contain__contactInfos__box__text__content"> <a href="mailto:kwiatkowski.virgil@gmail.com" />
                 kwiatkowski.virgil@gmail.com
               </p>
             </div>
           </div>
         </div>
-        <div className="contactForm">
+        <div className="slideFive__contain__contactForm">
           <form id="contact-form" onSubmit={handleSubmit(onSubmit)} noValidate>
-            <h5>Votre message</h5>
-            <div className="inputbox">
+            <h5 className="slideFive__contain__contactForm__title">Votre message</h5>
+            <div className="slideFive__contain__contactForm__inputBox">
               <input
                 type="text"
                 name="name"
@@ -82,12 +82,12 @@ const SlideFive = () => {
                     message: 'Votre nom ne peut pas faire plus de 100 caractères',
                   },
                 })}
-                className="form-control formInput"
+                className="slideFive__contain__contactForm__inputBox__formInput"
               />
-              <span className="form__span">Full name</span>
+              <span className="slideFive__contain__contactForm__inputBox__span">Votre nom et prénom</span>
             </div>
             {errors.name && <span className="errorMessage">{errors.name.message}</span>}
-            <div className="inputbox">
+            <div className="slideFive__contain__contactForm__inputBox">
               <input
                 type="email"
                 name="email"
@@ -95,27 +95,27 @@ const SlideFive = () => {
                   required: true,
                   pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                 })}
-                className="formInput"
+                className="slideFive__contain__contactForm__inputBox__formInput"
               />
-              <span className="form__span">Adresse email</span>
+              <span className="slideFive__contain__contactForm__inputBox__span">Votre adresse email</span>
             </div>
             {errors.email && (
-              <span className="errorMessage">Please enter a valid email address</span>
+              <span className="errorMessage">Merci de renseigner une adresse valide</span>
             )}
-            <div className="inputbox">
+            <div className="slideFive__contain__contactForm__inputBox">
               <textarea
                 rows={3}
                 name="message"
                 ref={register({
                   required: true,
                 })}
-                className="formInput"
+                className="slideFive__contain__contactForm__inputBox__formInput"
               />
               {errors.message && <span className="errorMessage">Merci d'écrire votre message avant d'envoyer</span>}
-              <span className="form__span">message</span>
+              <span className="slideFive__contain__contactForm__inputBox__span">Votre message</span>
             </div>
-            <div className="inputBox">
-              <input className="formInput inputButton" type="submit" value="J'ai fini !" name="" />
+            <div className="slideFive__contain__contactForm__inputButton">
+              <input className="slideFive__contain__contactForm__inputButton__message" type="submit" value="J'ai fini !" name="" />
             </div>
           </form>
         </div>
