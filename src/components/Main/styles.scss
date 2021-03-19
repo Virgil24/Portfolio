@@ -28,3 +28,16 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
+@media (max-width: 1200px) {
+    body{
+        transform : rotate(90deg) translateX(100vh);
+        transform-origin: bottom right ;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        &__wrapper{
+            transform : rotate(-90deg) translateY(100vh);
+            transform-origin: bottom right ;
+
+        }
+    }
+}

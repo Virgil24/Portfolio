@@ -1,8 +1,10 @@
 import { CHANGE__COLOR__HOVER, LEFT_HOVER } from '../actions/slideThree';
+import { HANDLE_TOGGLE } from '../actions/nav';
 
 export const initialState = {
   backgroundColor: 'black',
   visibility: 'hidden',
+  toggle: true,
 };
 
 const projectReducer = (state = initialState, action = {}) => {
@@ -18,6 +20,11 @@ const projectReducer = (state = initialState, action = {}) => {
       return {
         ...state,
         backgroundColor: 'black',
+      };
+    case HANDLE_TOGGLE:
+      return {
+        ...state,
+        toggle: !state.toggle,
       };
     default:
       return state;

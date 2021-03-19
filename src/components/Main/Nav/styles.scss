@@ -16,7 +16,27 @@
     &__item {
         display: flex;
         list-style: none;
-        margin: 3rem 2rem;
+        margin: 3rem 3rem 3rem 4rem;
         cursor: none;
+        padding-top: 0.5rem;
+        &__icon{
+            margin : 2.8rem 0 0 0;
+            padding-left : 2rem;
+        }
+    }
+    &__item:hover{
+        border-top: white 2px solid;
     }
 }
+.svg-inline--fa.fa-w-16 {
+    width: 2rem;
+}
+
+.fa-times-circle{
+    height: 40px;
+            width: 40px;
+}
+@media (max-width: 767px) {
+   
+}
+  

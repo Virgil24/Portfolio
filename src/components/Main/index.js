@@ -2,9 +2,10 @@ import React from 'react';
 import Cursor from 'src/components/Main/Cursor';
 import SlideOne from 'src/components/Main/SlideOne';
 import SlideOneToTwo from 'src/components/Main/SlideOneToTwo';
-import Nav from 'src/components/Main/Nav';
+import Nav from 'src/containers/Nav';
 import SlideTwo from 'src/components/Main/SlideTwo';
 import SlideThree from 'src/containers/SlideThree';
+import SlideTest from 'src/components/Main/SlideTest';
 import SlideFive from 'src/components/Main/SlideFive';
 import projectsData from 'src/data/projects';
 
@@ -20,6 +21,7 @@ const Main = () => (
         <SlideTwo projects={projectsData} />
         <SlideOneToTwo />
         <SlideThree />
+        <SlideTest />
         <SlideFive />
       </div>
     </div>
