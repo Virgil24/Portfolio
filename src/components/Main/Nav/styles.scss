@@ -1,4 +1,5 @@
 .navigation {
+    font-family: 'NewsReader';
     display: flex;
     background-color: black;
     color: white;
@@ -14,6 +15,7 @@
     transform-origin: top left;
     z-index: 10;
     &__item {
+        position: relative;
         display: flex;
         list-style: none;
         margin: 3rem 3rem 3rem 4rem;
@@ -24,9 +26,9 @@
             padding-left : 2rem;
         }
     }
-    &__item:hover{
-        border-top: white 2px solid;
-    }
+     &__item:hover{
+       border-top: white 2px solid;
+    }  
 }
 .svg-inline--fa.fa-w-16 {
     width: 2rem;

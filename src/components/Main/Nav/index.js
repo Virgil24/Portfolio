@@ -9,16 +9,18 @@ const Nav = ({ handleToggleOnClick, toggle }) => {
     handleToggleOnClick();
   };
   const checkWindowSize = window.matchMedia('(max-width: 768px)');
-// if the device size is over ipad do not display toggle menu
+  // if the device size is over ipad do not display toggle menu
   if (checkWindowSize.matches === true) {
     return (
       <nav>
         {toggle && (
-        <div className="navigation">
+        <nav className="navigation">
+          <div className="navigation__marker" />
           <a href="#" className="navigation__item__icon"><FontAwesomeIcon icon={faTimesCircle} onClick={switchToggleOnClick} /></a>
           <a href="#" className="navigation__item">Accueil</a>
           <a href="#" className="navigation__item">Projets</a>
           <a href="#" className="navigation__item">Me concernant</a>
+
           <Link
             className="navigation__item"
             to="contact"
@@ -29,7 +31,7 @@ const Nav = ({ handleToggleOnClick, toggle }) => {
           >
             Contact
           </Link>
-        </div>
+        </nav>
         )}
         {!toggle && (
         <a href="#" className="navigation__item__icon"> <FontAwesomeIcon icon={faChevronCircleDown} onClick={switchToggleOnClick} /></a>

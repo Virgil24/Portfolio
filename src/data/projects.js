@@ -15,6 +15,8 @@ export default [
     stackFront: 'ReactJs - Redux - Sass',
     stackBack: '',
     picture: 'https://images.unsplash.com/photo-1518976024611-28bf4b48222e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8bGlzdHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    website: 'https://amanger.com/#/',
+    github: 'https://github.com/Virgil24/to-do-list',
 
   },
   // {

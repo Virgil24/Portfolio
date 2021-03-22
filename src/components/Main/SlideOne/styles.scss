@@ -29,7 +29,7 @@
             border-radius: 20px;
             display: flex;
             align-items: center;
-            transition: 2s;
+            transition: 1s;
             margin-bottom: 8rem;
             &__circle{
                 position: absolute;
@@ -56,7 +56,7 @@
                 width : 50%;
                 left : 20%;
                 padding: 5px 20px 20px 40px;
-                transition: 2s;
+                transition: 1s;
                 opacity: 0;
                 color : #FBFBFD;
                 &__title{
@@ -90,7 +90,7 @@
                     height: 300px;
                     width: auto;
                     pointer-events: none;
-                    transition: 2s;
+                    transition: 1s;
             }
         }
         &__card:hover .slide__one__container__card__circle:before {
@@ -107,7 +107,4 @@
             visibility: visible;
         }
     }
-}
-.contact {
-    
 }
