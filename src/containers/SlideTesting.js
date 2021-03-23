@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import SlideTest from '../components/Main/SlideTest';
+import SlideTesting from '../components/Main/SlideTesting';
 import { launchAnimation } from '../actions/slideTest';
 
 const mapStateToProps = (state) => (
@@ -13,4 +13,4 @@ const mapDispatchToProps = (dispatch) => ({
   },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(SlideTest);
+export default connect(mapStateToProps, mapDispatchToProps)(SlideTesting);

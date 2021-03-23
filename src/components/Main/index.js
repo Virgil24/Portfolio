@@ -4,8 +4,8 @@ import SlideOne from 'src/components/Main/SlideOne';
 import SlideOneToTwo from 'src/components/Main/SlideOneToTwo';
 import Nav from 'src/containers/Nav';
 import SlideTwo from 'src/components/Main/SlideTwo';
-import SlideTest from 'src/containers/SlideTest';
 import SlideFive from 'src/components/Main/SlideFive';
+import TestingSlide from 'src/containers/SlideTesting';
 import projectsData from 'src/data/projects';
 
 import './styles.scss';
@@ -18,8 +18,7 @@ const Main = ({ loading }) => (
       <div className="outer-wrapper__wrapper">
         <SlideOne />
         <SlideTwo projects={projectsData} />
-        <SlideOneToTwo />
-        <SlideTest />
+        <TestingSlide />
         <SlideFive />
       </div>
     </div>
