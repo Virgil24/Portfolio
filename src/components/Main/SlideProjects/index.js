@@ -1,6 +1,8 @@
 import React from 'react';
 import './styles.scss';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe, faCode } from '@fortawesome/free-solid-svg-icons';
 
 const SlideProjects = ({ projects }) => (
   <div className="second__slide" id="projects">
@@ -13,6 +15,10 @@ const SlideProjects = ({ projects }) => (
           <div className="second__slide__card__content__stack">
             <p> Techno front-end : {project.stackFront} </p>
             <p> Techno back-end : {project.stackBack} </p>
+          </div>
+          <div className="second__slide__card__content__link">
+            <p> <a href={project.website} target="_blank" rel="noreferrer">Voir le site : <FontAwesomeIcon icon={faGlobe} /> </a></p>
+            <p> <a href={project.github} target="_blank" rel="noreferrer">Code source : <FontAwesomeIcon icon={faCode} /></a></p>
           </div>
         </div>
       </div>

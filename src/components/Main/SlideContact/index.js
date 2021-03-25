@@ -61,25 +61,26 @@ const SlideContact = () => {
       <div className="slideFive__contain">
         <div className="slideFive__contain__contactInfos">
           <div className="slideFive__contain__contactInfos__box">
-            <div className="slideFive__contain__contactInfos__box__icon"><FontAwesomeIcon icon={faMapMarkerAlt} /></div>
+            <div className="slideFive__contain__contactInfos__box__icon"> <a href="https://www.google.fr/maps/place/Boulevard+Carnot,+43000+Le+Puy-en-Velay/@45.0437772,3.87991,16.06z/data=!4m5!3m4!1s0x47f5fbaaa30387f1:0x8a499e54e4d39663!8m2!3d45.0459348!4d3.8794813" target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faMapMarkerAlt} /> </a> </div>
             <div className="slideFive__contain__contactInfos__box__text">
               <h3 className="slideFive__contain__contactInfos__box__text__title">Adresse</h3>
-              <p className="slideFive__contain__contactInfos__box__text__content">Boulevard Carnot, Le-Puy-En-Velay <br />43000 <br />Le-Puy-En-Velay</p>
+              <p className="slideFive__contain__contactInfos__box__text__content"> <a href="https://www.google.fr/maps/place/Boulevard+Carnot,+43000+Le+Puy-en-Velay/@45.0437772,3.87991,16.06z/data=!4m5!3m4!1s0x47f5fbaaa30387f1:0x8a499e54e4d39663!8m2!3d45.0459348!4d3.8794813" target="_blank" rel="noreferrer">Boulevard Carnot, Le-Puy-En-Velay <br />43000 <br />Le-Puy-En-Velay</a></p>
             </div>
           </div>
           <div className="slideFive__contain__contactInfos__box">
-            <div className="slideFive__contain__contactInfos__box__icon"><FontAwesomeIcon icon={faPhone} /></div>
+            <div className="slideFive__contain__contactInfos__box__icon"> <a href="tel:+33665083567"><FontAwesomeIcon icon={faPhone} /></a></div>
             <div className="slideFive__contain__contactInfos__box__text">
               <h3 className="slideFive__contain__contactInfos__box__text__title">Téléphone</h3>
-              <p className="slideFive__contain__contactInfos__box__text__content"> <a href="tel:0665083567" /> 06.65.08.35.67 </p>
+              <p className="slideFive__contain__contactInfos__box__text__content"> <a href="tel:+33665083567"> 06.65.08.35.67 </a></p>
             </div>
           </div>
           <div className="slideFive__contain__contactInfos__box">
-            <div className="slideFive__contain__contactInfos__box__icon"><FontAwesomeIcon icon={faEnvelope} /></div>
+            <div className="slideFive__contain__contactInfos__box__icon"><a href="mailto:kwiatkowski.virgil@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a></div>
             <div className="slideFive__contain__contactInfos__box__text">
               <h3 className="slideFive__contain__contactInfos__box__text__title">Email</h3>
-              <p className="slideFive__contain__contactInfos__box__text__content"> <a href="mailto:kwiatkowski.virgil@gmail.com" />
+              <p className="slideFive__contain__contactInfos__box__text__content"> <a href="mailto:kwiatkowski.virgil@gmail.com">
                 kwiatkowski.virgil@gmail.com
+              </a>
               </p>
             </div>
           </div>

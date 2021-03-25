@@ -49,7 +49,8 @@ export default [
     stackFront: 'PHP',
     stackBack: 'PHP',
     picture: 'https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2249&q=80',
-
+    website: '',
+    github: '',
   },
   {
     id: 6,
@@ -58,5 +59,7 @@ export default [
     stackFront: 'PHP, Bootstrap',
     stackBack: 'PHP',
     picture: 'https://images.unsplash.com/photo-1511081692775-05d0f180a065?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fHJlc3RhdXJhbnQlMjBtZW51fGVufDB8fDB8&auto=format&fit=crop&w=800&q=60',
+    website: '',
+    github: '',
   },
 ];
