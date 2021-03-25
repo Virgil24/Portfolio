@@ -3,7 +3,7 @@ import Cursor from 'src/components/Main/Cursor';
 import SlidePresentation from 'src/components/Main/SlidePresentation';
 import Nav from 'src/containers/Nav';
 import SlideProjects from 'src/components/Main/SlideProjects';
-import SlideFive from 'src/components/Main/SlideFive';
+import SlideContact from 'src/components/Main/SlideContact';
 import SlideAbout from 'src/containers/SlideAbout';
 import projectsData from 'src/data/projects';
 
@@ -18,7 +18,7 @@ const Main = ({ loading }) => (
         <SlidePresentation />
         <SlideProjects projects={projectsData} />
         <SlideAbout />
-        <SlideFive />
+        <SlideContact />
       </div>
     </div>
   </div>

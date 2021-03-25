@@ -12,7 +12,7 @@ AOS.init({
 });
 
 const SlidePresentation = () => (
-  <div id="first__slide" className="slide__one">
+  <div id="first__slide" className="slide__one" id="presentation">
     <h1 className="slide__one__presentation">Virgil Kwiatkowski</h1>
     <h2 className="slide__one__presentation__subtitle">Developpeur Web FullStack Junior</h2>
     <div className="slide__one__container">
@@ -32,11 +32,6 @@ const SlidePresentation = () => (
       className="slide__one__presentation__scroll"
     >Scroll <FontAwesomeIcon icon={faMouse} />
     </div>
-    {/* <aside>
-      <p>Copyright © 2020 Virgil Kwiatkowski - Tous droits réservés</p>
-      <p> <a href="mailto:kwiatkowski.virgil@gmail.com">kwiatkowski.virgil@gmail.com</a></p>
-      <p> <a href="tel:+33665083567">06.65.08.35.67</a></p>
-    </aside> */}
   </div>
 );
 

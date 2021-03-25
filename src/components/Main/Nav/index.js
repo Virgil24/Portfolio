@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles.scss';
-import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimesCircle, faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -17,18 +16,10 @@ const Nav = ({ handleToggleOnClick, toggle }) => {
         <nav className="navigation">
           <div className="navigation__marker" />
           <a href="#" className="navigation__item__icon"><FontAwesomeIcon icon={faTimesCircle} onClick={switchToggleOnClick} /></a>
-          <a href="#" className="navigation__item">Accueil</a>
-          <a href="#" className="navigation__item">Projets</a>
-          <a href="#" className="navigation__item">Me concernant</a>
-
-          <Link
-            className="navigation__item"
-            to="contact"
-            smooth
-            duration={800}
-          >
-            Contact
-          </Link>
+          <a href="#presentation" className="navigation__item">Accueil</a>
+          <a href="#projects" className="navigation__item">Projets</a>
+          <a href="#about" className="navigation__item">Me concernant</a>
+          <a href="#contact" className="navigation__item">Contact</a>
         </nav>
         )}
         {!toggle && (
@@ -41,19 +32,11 @@ const Nav = ({ handleToggleOnClick, toggle }) => {
   } if (checkWindowSize.matches === false) {
     return (
       <div className="navigation">
-        <a href="#" className="navigation__item">Accueil</a>
-        <a href="#" className="navigation__item">Projets</a>
-        <a href="#" className="navigation__item">Me concernant</a>
-        <Link
-          className="navigation__item"
-          to="contact"
-          spy
-          smooth
-          offset={0}
-          duration={800}
-        >
-          Contact
-        </Link>
+        <a href="#presentation" className="navigation__item">Accueil</a>
+        <a href="#projects" className="navigation__item">Projets</a>
+        <a href="#about" className="navigation__item">Me concernant</a>
+        <a href="#contact" className="navigation__item">Contact</a>
+
       </div>
     );
   }

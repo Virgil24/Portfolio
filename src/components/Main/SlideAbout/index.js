@@ -12,7 +12,7 @@ const slideAbout = ({ launchAnimation, animate }) => {
   };
   return (
     <div>
-      <div className="slideAbout" onMouseOver={launchAnimationOnMouseOver}>
+      <div className="slideAbout" id="about" onMouseOver={launchAnimationOnMouseOver}>
         <section className="slideAbout__section">
           <h2 className="slideAbout__section__title slideAbout__section__title1"> À propos</h2>
           <div className="slideAbout__section__box">
@@ -21,7 +21,7 @@ const slideAbout = ({ launchAnimation, animate }) => {
                 <img className="slideAbout__section__box__contains__imgBx__pic" src="https://images.unsplash.com/photo-1514467911470-2b2492c64477?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8bW91dGFpbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="mountainpic" />
               </div>
               <div className="slideAbout__section__box__contains__contentt slideAbout__section__box__contains__content1">
-                <h3 className="slideAbout__section__box__contains__contentt__title"> Mon Profil</h3>
+                <h3 className="slideAbout__section__box__contains__contentt__title" > Mon Profil</h3>
                 {animate && (
                 <Typewriter
                   wrapperClassName="slideAbout__section__box__contains__contentt__text"
@@ -30,7 +30,7 @@ const slideAbout = ({ launchAnimation, animate }) => {
                       .typeString('Organisé, rigoureux et motivé,')
                       .pauseFor(500)
                       .deleteAll(20)
-                      .pasteString('Après 5 ans passés à l\'étranger pour autant d\'années travaillées dans le secteur du service client, j\'ai choisi d\'entamer une reconversion proffessionelle dans le secteur de développement web en Juin 2020 à l\'âge de 26 ans. J\'ai donc suivi une formation de 5 mois auprès de l\'école O\'clock, 3 mois de socle, suivi de 1 mois de spécialisation front-end avec React/Redux, puis d\'un projet d\'équipe en totale autonomie de 1 mois. (<a target="_blank" rel="noreferrer" href="https://amanger.com">aManger.com</a>). A la suite de cette formation, j\'ai passé la certification <a target="_blank" rel="noreferrer"  href="https://www.opquast.com/certification/" target="_blank" rel="noreferrer">Opquast </a>, puis mon Titre Proffessionnel RNCP niveau 5 (équivalent BAC+2). <br/> Aujourd\'hui, je poursuis mon apprentissage de React/Redux, et j\'apprends PHP afin d\'étendre mes compétences et pour répondre aux prérequis de la licence proffessionnelle que je souhaite intégrer : <a href="https://iut.uca.fr/formations/lp-metiers-du-numerique-conception-redaction-et-realisation-web">conception, rédaction et réalisation web </a>')
+                      .pasteString('Après 5 ans passés à l\'étranger pour autant d\'années travaillées dans le secteur du service client, j\'ai choisi d\'entamer une reconversion proffessionelle dans le secteur de développement web en Juin 2020 à l\'âge de 26 ans. J\'ai donc suivi une formation de 5 mois auprès de l\'école O\'clock, 3 mois de socle, suivi de 1 mois de spécialisation front-end avec React/Redux, puis d\'un projet d\'équipe en totale autonomie de 1 mois. (<a target="_blank" rel="noreferrer" href="https://amanger.com">aManger.com</a>). A la suite de cette formation, j\'ai passé la certification <a target="_blank" rel="noreferrer"  href="https://www.opquast.com/certification/" target="_blank" rel="noreferrer">Opquast </a> (score : 875/1000), puis mon Titre Proffessionnel RNCP niveau 5 (équivalent BAC+2). <br/> Aujourd\'hui, je poursuis mon apprentissage de React/Redux, et j\'apprends PHP afin d\'étendre mes compétences et pour répondre aux prérequis de la licence proffessionnelle que je souhaite intégrer : <a href="https://iut.uca.fr/formations/lp-metiers-du-numerique-conception-redaction-et-realisation-web">conception, rédaction et réalisation web </a>')
                       .start();
                   }}
                 />

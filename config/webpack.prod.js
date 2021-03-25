@@ -30,8 +30,12 @@ module.exports = merge(common, {
             options: { publicPath: '../' },
           },
           {
-            loader: 'css-loader',
-            options: { importLoaders: 3 },
+            test: /\.(jpe?g|gif|pdf)$/i,
+            use: [
+              {
+                loader: 'file-loader',
+              },
+            ],
           },
           'postcss-loader',
           'resolve-url-loader',

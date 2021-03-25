@@ -12,9 +12,13 @@ module.exports = merge(common, {
     rules: [
       // Styles
       {
-        test: /\.mp4$/,
-        use: 'file-loader?name=videos/[name].[ext]',
-    },
+        test: /\.(jpe?g|gif|pdf)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
       {
         test: /\.(s?css)$/,
         use: [

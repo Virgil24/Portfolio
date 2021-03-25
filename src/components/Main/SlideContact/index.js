@@ -3,16 +3,32 @@
 /* eslint-disable max-len */
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import {
+  faEnvelope, faPhone, faMapMarkerAlt, faAddressCard,
+} from '@fortawesome/free-solid-svg-icons';
 import { useForm } from 'react-hook-form';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 import emailjs from 'emailjs-com';
 import './styles.scss';
+import cvVirgil from './CV-Virgil-Kwiatkowski.pdf';
 
-const SlideFive = () => {
+const SlideContact = () => {
   const {
     register, errors, handleSubmit, reset,
   } = useForm();
-
+  const toastifySuccess = () => {
+    toast('Votre message a bien été envoyé ! Je reviens vers vous au plus vite', {
+      position: 'center',
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: false,
+      className: 'submit-feedback success',
+      toastId: 'notifyToast',
+    });
+  };
   const onSubmit = (data) => {
     try {
       const templateParams = {
@@ -28,6 +44,7 @@ const SlideFive = () => {
         'user_fimCD2qP4tgt5Df1PuKtX',
       );
       reset();
+      toastifySuccess();
     }
     catch (e) {
       console.log(e);
@@ -37,7 +54,7 @@ const SlideFive = () => {
   return (
     <div className="slideFive" id="contact">
       <div className="slideFive__contentForm">
-        <h2 className="slideFive__contentForm__title">Me contacter</h2>
+        <h2 className="slideFive__contentForm__title" id="contact">Me contacter</h2>
         <p className="slideFive__contentForm__text">Je suis aujourd'hui à la recherche d'une alternance afin d'intégrer la licence proffessionnelle <a className="slideFive__contentForm__text__link" href="https://iut.uca.fr/formations/lp-metiers-du-numerique-conception-redaction-et-realisation-web">Conception, rédaction et réalisation web : option développement web</a> pour l'année académique 2021-2022 (Septembre-Juin), n'hésitez pas à me contacter pour tout renseignement que vous souhaiteriez obtenir. <br /><br /> Je suis également disponible pour discuter de tout ce qui tourne autour du développement.
         </p>
       </div>
@@ -63,6 +80,14 @@ const SlideFive = () => {
               <h3 className="slideFive__contain__contactInfos__box__text__title">Email</h3>
               <p className="slideFive__contain__contactInfos__box__text__content"> <a href="mailto:kwiatkowski.virgil@gmail.com" />
                 kwiatkowski.virgil@gmail.com
+              </p>
+            </div>
+          </div>
+          <div className="slideFive__contain__contactInfos__box">
+            <div className="slideFive__contain__contactInfos__box__icon"><a href={cvVirgil} download><FontAwesomeIcon icon={faAddressCard} /></a></div>
+            <div className="slideFive__contain__contactInfos__box__text">
+              <h3 className="slideFive__contain__contactInfos__box__text__title">Mon curriculum vitæ </h3>
+              <p className="slideFive__contain__contactInfos__box__text__content"> <a href={cvVirgil} download>Télécharger </a>
               </p>
             </div>
           </div>
@@ -118,9 +143,15 @@ const SlideFive = () => {
             </div>
           </form>
         </div>
+        <ToastContainer />
       </div>
+      <aside className="slideFive__footer">
+        <p>Copyright © 2020 Virgil Kwiatkowski - Tous droits réservés</p>
+        <p> <a href="mailto:kwiatkowski.virgil@gmail.com">kwiatkowski.virgil@gmail.com</a></p>
+        <p> <a href="tel:+33665083567">06.65.08.35.67</a></p>
+      </aside>
     </div>
   );
 };
 
-export default SlideFive;
+export default SlideContact;

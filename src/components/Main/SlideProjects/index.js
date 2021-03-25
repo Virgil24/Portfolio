@@ -3,7 +3,7 @@ import './styles.scss';
 import PropTypes from 'prop-types';
 
 const SlideProjects = ({ projects }) => (
-  <div className="second__slide">
+  <div className="second__slide" id="projects">
     {projects.map((project) => (
       <div className="second__slide__card" key={project.id}>
         <img className="second__slide__card__image" src={project.picture} alt="amanger" />
