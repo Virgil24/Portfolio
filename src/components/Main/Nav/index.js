@@ -24,9 +24,7 @@ const Nav = ({ handleToggleOnClick, toggle }) => {
           <Link
             className="navigation__item"
             to="contact"
-            spy
             smooth
-            offset={0}
             duration={800}
           >
             Contact

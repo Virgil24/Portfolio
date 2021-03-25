@@ -1,11 +1,10 @@
 import React from 'react';
 import Cursor from 'src/components/Main/Cursor';
-import SlideOne from 'src/components/Main/SlideOne';
-import SlideOneToTwo from 'src/components/Main/SlideOneToTwo';
+import SlidePresentation from 'src/components/Main/SlidePresentation';
 import Nav from 'src/containers/Nav';
-import SlideTwo from 'src/components/Main/SlideTwo';
+import SlideProjects from 'src/components/Main/SlideProjects';
 import SlideFive from 'src/components/Main/SlideFive';
-import TestingSlide from 'src/containers/SlideTesting';
+import SlideAbout from 'src/containers/SlideAbout';
 import projectsData from 'src/data/projects';
 
 import './styles.scss';
@@ -16,9 +15,9 @@ const Main = ({ loading }) => (
     <Nav />
     <div className="outer-wrapper">
       <div className="outer-wrapper__wrapper">
-        <SlideOne />
-        <SlideTwo projects={projectsData} />
-        <TestingSlide />
+        <SlidePresentation />
+        <SlideProjects projects={projectsData} />
+        <SlideAbout />
         <SlideFive />
       </div>
     </div>

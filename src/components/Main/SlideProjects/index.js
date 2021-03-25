@@ -2,22 +2,25 @@ import React from 'react';
 import './styles.scss';
 import PropTypes from 'prop-types';
 
-const SlideTwo = ({ projects }) => (
+const SlideProjects = ({ projects }) => (
   <div className="second__slide">
     {projects.map((project) => (
       <div className="second__slide__card" key={project.id}>
         <img className="second__slide__card__image" src={project.picture} alt="amanger" />
         <div className="second__slide__card__content">
-          <h2 className="second__slide__card__content__title">{project.title}</h2>
-          <p className="second__slide__card__content__text">{project.description}</p>
-          <p className="second__slide__card__content__text">{project.stackFront} / {project.stackBack}</p>
+          <h2 className="second__slide__card__content__title"> {project.title}</h2>
+          <p className="second__slide__card__content__text">  {project.description}</p>
+          <div className="second__slide__card__content__stack">
+            <p> Techno front-end : {project.stackFront} </p>
+            <p> Techno back-end : {project.stackBack} </p>
+          </div>
         </div>
       </div>
     ))}
   </div>
 );
 
-SlideTwo.propTypes = {
+SlideProjects.propTypes = {
   projects: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number,
@@ -29,4 +32,4 @@ SlideTwo.propTypes = {
     }).isRequired,
   ).isRequired,
 };
-export default SlideTwo;
+export default SlideProjects;

@@ -9,9 +9,9 @@
         &__image {
             object-fit: cover;
             display: block;
-            margin : 5rem auto;
+            margin : 5rem auto 3rem auto;
             width : 70%;
-            height: 60%;  
+            height: 50%;  
             filter: grayscale(100%);
             transition: 1s;
                 }
@@ -25,10 +25,21 @@
                 text-align: center;
             }
             &__text{
+                margin : 1rem 2rem;
                 line-height: 1.5rem;
                 color: white;
-
             }
+            &__stack{
+                margin : 0.5rem 2rem;
+                line-height: 1.5rem;
+                color: white;
+                font-size: 1.2rem;
+            }
+            
+                &__item{
+                    margin-bottom: 1rem;
+                }
+            
         }
     }
     &__card:last-child {
@@ -51,7 +62,11 @@
         transition: 1s;
     }
     &__card:nth-child(5):hover {
-        background: #3cbd7c;
+        background: #426855;
+        transition: 1s;
+    }
+    &__card:nth-child(6):hover {
+        background: #32a5b4;
         transition: 1s;
     }
     &__card:hover .second__slide__card__image {

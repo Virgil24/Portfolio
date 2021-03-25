@@ -2,7 +2,6 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable max-len */
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { useForm } from 'react-hook-form';

@@ -1,4 +1,6 @@
+@use "src/styles/vars" as v;
 .slideAbout{
+    font-family: 'NewsReader';
     background: black;
     min-height: 100vh;
     min-width: 330vw;
@@ -24,7 +26,7 @@
             transform: translate(-10%,-90%);
         }
         &__title2{
-            transform: translate(-20%,100%);
+            transform: translate(-20%,110%);
         }
         &__title3{
             transform: translate(-20%,-100%);
@@ -71,15 +73,31 @@
                     right:0;
                     padding: 40px;
                     background: #555; 
+                    margin-bottom: 2rem;
                     z-index: 1;
                     width: 500px;
                     height:300px;
                     color: #fff;
                     box-shadow: 0 25px 35px rgba(0,0,0,0.1);
                     transform: translate(0%,0%);
+                    &__title{
+                        font-size : 1.3rem;
+                        margin-bottom: 1rem;
+                        text-align: center;
+                        color : rgb(26, 26, 26);
+                    }
+                    &__list{
+                        &__item{
+                            margin-bottom: 1rem;
+                            &__a{
+                                color : black;
+                            }
+                        }
+                    }
                 }
                 &__content1{
                     transform: translate(-140%,70%);
+                    height: 350px;
                 }
                 &__content2{
                     transform: translate(-140%,-50%);
@@ -93,4 +111,17 @@
             }
         }
     }
+}
+
+.Typewriter__wrapper{
+    line-height: 1rem;
+    text-align: justify;
+}
+.Typewriter__wrapper >a{
+    color : rgb(231, 79, 104);
+    cursor: none;
+}
+.fa-angle-right{
+    color : rgb(231, 79, 104);
+
 }
