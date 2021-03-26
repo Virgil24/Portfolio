@@ -38,7 +38,12 @@
     height: 40px;
     width: 40px;
 }
-@media (max-width: 767px) {
-   
+@media (max-width: 1200px) {
+    .navigation{
+        transform: none;
+        height: 100px;
+        width : 100vw;
+        top : 0;
+    }
 }
   

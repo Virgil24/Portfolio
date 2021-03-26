@@ -112,7 +112,6 @@
         }
     }
 }
-
 .Typewriter__wrapper{
     line-height: 1rem;
     text-align: justify;
@@ -125,3 +124,12 @@
     color : #b30b16;
 
 }
+
+
+@media (max-width: 1200px) {
+
+   .slideAbout{
+       display: none;
+   }
+}
+  

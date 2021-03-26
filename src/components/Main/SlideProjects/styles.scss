@@ -82,3 +82,13 @@
         transition: 0.5s;
     }
 }
+
+@media (max-width: 1200px) {
+    .second__slide{
+      display: flex;
+      flex-direction: column;
+      &__card{
+          width: 100%;
+      }
+    }
+ }

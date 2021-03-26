@@ -8,36 +8,58 @@ body {
     padding-right: 10vh;
     width: 100vh;
     height: 100vw;
-    transform : rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
+    // transform : rotate(-90deg) translateX(-100vh);
+    // transform-origin: top left;
+    // overflow-y: scroll;
+    // overflow-x: hidden;
+    // position: absolute;
     scrollbar-width: none;
     -ms-overflow-style: none;
     &__wrapper{
-        display: flex;
-    flex-direction: row;
-    transform : rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
+    //     display: flex;
+    // flex-direction: row;
+    // transform : rotate(90deg) translateY(-100vh);
+    // transform-origin: top left;
+    // overflow-y: scroll;
+    // overflow-x: hidden;
+    // position: absolute;
     }
 }
-::-webkit-scrollbar {
-    display: none;
+
+@media (min-width: 1200px) {
+    body {
+        margin: 0;
+        padding: 0;    
+        cursor: none;
+    }
+    .outer-wrapper {
+        padding-right: 10vh;
+        width: 100vh;
+        height: 100vw;
+        transform : rotate(-90deg) translateX(-100vh);
+        transform-origin: top left;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: absolute;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        &__wrapper{
+            display: flex;
+            flex-direction: row;
+            transform : rotate(90deg) translateY(-100vh);
+            transform-origin: top left;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            position: absolute;
+        }
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 @media (max-width: 1200px) {
-    body{
-        transform : rotate(90deg) translateX(100vh);
-        transform-origin: bottom right ;
-        overflow-y: hidden;
-        overflow-x: scroll;
-        &__wrapper{
-            transform : rotate(-90deg) translateY(100vh);
-            transform-origin: bottom right ;
-
-        }
+    .outer-wrapper{
+        max-width :100%;
+        padding-right: 0;
     }
 }

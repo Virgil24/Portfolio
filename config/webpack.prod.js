@@ -23,6 +23,14 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
+        test: /\.(jpe?g|gif|pdf)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+      {
         test: /\.(s?css)$/,
         use: [
           {
