@@ -5,6 +5,7 @@ import Nav from 'src/containers/Nav';
 import SlideProjects from 'src/components/Main/SlideProjects';
 import SlideContact from 'src/components/Main/SlideContact';
 import SlideAbout from 'src/containers/SlideAbout';
+import SlideAboutResponsive from 'src/containers/SlideAboutResponsive';
 import projectsData from 'src/data/projects';
 
 import './styles.scss';
@@ -18,6 +19,7 @@ const Main = ({ loading }) => (
         <SlidePresentation />
         <SlideProjects projects={projectsData} />
         <SlideAbout />
+        <SlideAboutResponsive />
         <SlideContact />
       </div>
     </div>

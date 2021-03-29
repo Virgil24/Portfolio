@@ -2,7 +2,7 @@
 .slide__one{
     font-family: 'Newsreader';
     min-height: 100vh;
-        min-width: 100vw;
+    min-width: 100vw;
     &__presentation{
         text-align: center;
         font-size: 4rem;
@@ -20,7 +20,7 @@
         &__scroll{
             text-align: center;
             font-size: 1.5rem;
-            margin-top: -3rem;
+            margin-top: -5rem;
         }
     }
     &__container{
@@ -133,13 +133,11 @@
 @media (max-width: 768px) {
     .slide__one{
         &__container{
-            &__card:hover  .slide__one__container__card__picture{
-
-            }
             &__card{
                 &__content{
                     width: 60%;
                 }
+                height: 80%;
             }
         }
     }

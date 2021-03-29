@@ -12,13 +12,13 @@ const slideAbout = ({ launchAnimation, animate }) => {
   };
   return (
     <div>
-      <div className="slideAbout" id="about" onMouseOver={launchAnimationOnMouseOver}>
+      <div className="slideAbout"  onMouseOver={launchAnimationOnMouseOver}>
         <section className="slideAbout__section">
           <h2 className="slideAbout__section__title slideAbout__section__title1"> À propos</h2>
           <div className="slideAbout__section__box">
             <div className="slideAbout__section__box__contains">
               <div className="slideAbout__section__box__contains__imgBx slideAbout__section__box__contains__image1">
-                <img className="slideAbout__section__box__contains__imgBx__pic" src="https://images.unsplash.com/photo-1514467911470-2b2492c64477?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8bW91dGFpbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="mountainpic" />
+                <img className="slideAbout__section__box__contains__imgBx__pic" src="https://images.pexels.com/photos/1840794/pexels-photo-1840794.png?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="grandcanyon" />
               </div>
               <div className="slideAbout__section__box__contains__contentt slideAbout__section__box__contains__content1">
                 <h3 className="slideAbout__section__box__contains__contentt__title" > Mon Profil</h3>
@@ -44,7 +44,7 @@ const slideAbout = ({ launchAnimation, animate }) => {
           <div className="slideAbout__section__box">
             <div className="slideAbout__section__box__contains">
               <div className="slideAbout__section__box__contains__imgBx slideAbout__section__box__contains__image2">
-                <img className="slideAbout__section__box__contains__imgBx__pic" src="https://images.unsplash.com/photo-1494768788897-7fdaa00de2a1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="iceberg" />
+                <img className="slideAbout__section__box__contains__imgBx__pic" src="https://images.pexels.com/photos/978695/pexels-photo-978695.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="football pitch" />
               </div>
               <div className="slideAbout__section__box__contains__contentt slideAbout__section__box__contains__content2">
                 <h3 className="slideAbout__section__box__contains__contentt__title"> Mes compétences côté Front-end</h3>
@@ -63,7 +63,7 @@ const slideAbout = ({ launchAnimation, animate }) => {
           <div className="slideAbout__section__box">
             <div className="slideAbout__section__box__contains">
               <div className="slideAbout__section__box__contains__imgBx slideAbout__section__box__contains__image3">
-                <img className="slideAbout__section__box__contains__imgBx__pic" src="https://images.unsplash.com/photo-1487766036723-04aebf785670?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="iceberg" />
+                <img className="slideAbout__section__box__contains__imgBx__pic" src="https://images.pexels.com/photos/5740516/pexels-photo-5740516.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="tennis" />
               </div>
               <div className="slideAbout__section__box__contains__contentt slideAbout__section__box__contains__content3">
                 <h3 className="slideAbout__section__box__contains__contentt__title"> Mes compétences côté Back-end</h3>
@@ -82,7 +82,7 @@ const slideAbout = ({ launchAnimation, animate }) => {
           <div className="slideAbout__section__box">
             <div className="slideAbout__section__box__contains">
               <div className="slideAbout__section__box__contains__imgBx slideAbout__section__box__contains__image4">
-                <img className="slideAbout__section__box__contains__imgBx__pic" src="https://images.unsplash.com/photo-1487766036723-04aebf785670?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="iceberg" />
+                <img className="slideAbout__section__box__contains__imgBx__pic" src="https://images.pexels.com/photos/2533092/pexels-photo-2533092.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="van" />
               </div>
               <div className="slideAbout__section__box__contains__contentt slideAbout__section__box__contains__content4">
                 <h3 className="slideAbout__section__box__contains__contentt__title"> Mes compétences organisationnelles</h3>

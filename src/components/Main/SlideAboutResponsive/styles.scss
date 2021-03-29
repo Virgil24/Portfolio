@@ -1,0 +1,96 @@
+.slideAboutResponsive{
+    padding: 5rem 0; 
+    font-family: 'NewsReader';
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    &__section{
+        margin: 0 auto;
+        &__title{
+            font-size: 7rem;
+            font-weight: 700;
+            color : transparent;
+            -webkit-text-stroke: 1px rgb(212, 211, 211);
+            z-index: 2;
+            padding-left: 2rem;
+            transform: translate(50px,-30px);
+        }
+        &__box{
+            &__contains{
+                &__imgBx{
+                    display: inline-block;
+                    margin: 0  auto;
+                    margin-left: calc(100%-600px);
+                    &__pic{
+                        width: 600px;
+                        height: 600px;
+                        object-fit: cover;
+                    }
+                }
+                &__content1{
+                    transform: translate(0,-200px);
+                }
+                &__content2{
+                    transform: translate(0,-200px);
+                }
+                &__content3{
+                    transform: translate(0,-200px);
+                }
+                &__content4{
+                    transform: translate(0,-200px);
+                }
+                &__contentt{
+                    border-radius: 5px;
+                    font-size: 1.3rem;
+                    line-height: 1.8rem;
+                    margin: 0 auto;
+                    padding: 40px;
+                    background: rgb(255, 255, 255); 
+                    margin-bottom: 2rem;
+                    z-index: 1;
+                    width: 70%;
+                    min-width: 70%;
+                    max-width: 70%;
+                    height:500px;
+                    color: rgb(65, 65, 65);
+                    &__title{
+                        font-size : 2rem;
+                        margin-bottom: 2rem;
+                        text-align: center;
+                        color : rgb(26, 26, 26);
+                    }
+                    &__list{
+                        &__item{
+                            margin-bottom: 1rem;
+                            &__span{
+                                text-decoration: line-through;
+                            }
+                        }
+                        &__item a{
+                            color: #b30b16;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.Typewriter__wrapper{
+    line-height: 1rem;
+    text-align: justify;
+}
+.Typewriter__wrapper >a{
+    color : #b30b16;
+    cursor: none;
+}
+.fa-angle-right{
+    color : #b30b16;
+
+}
+
+@media (min-width: 1200px) {
+
+    .slideAboutResponsive{
+        display: none;
+    }
+ }
