@@ -29,7 +29,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      favicon: './virgilfinal.png',
+      favicon: paths.assets + '/favicon.ico',
       template: paths.assets + '/index.html',
     }),
   ],
