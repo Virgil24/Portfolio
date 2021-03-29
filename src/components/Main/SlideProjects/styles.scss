@@ -21,7 +21,7 @@
                 font-size: 1.5rem;
                 text-transform: uppercase;
                 margin-bottom: 2rem;
-                color: black;
+                color: white;
                 text-align: center;
             }
             &__text{
@@ -41,7 +41,7 @@
             &__link{
                 margin : 1rem 2rem;
                 line-height: 1.5rem;
-                color: white;
+								color: white;
             }
         }
     }
@@ -81,14 +81,65 @@
         color:white;
         transition: 0.5s;
     }
+
 }
 
 @media (max-width: 1200px) {
     .second__slide{
       display: flex;
       flex-direction: column;
+      margin-top: 1rem;
       &__card{
-          width: 100%;
+          border : none;
+          width: 80%;
+          margin : 0 auto;
+          &__image{
+            width: 60%;
+          }
+					&__content{
+						&__link{
+							background: white;
+							padding : 1rem 2rem;
+							border-radius: 5px;
+						}
+						&__title{
+							color: #333;
+						}
+					}
       }
+			&__card:hover .second__slide__card__content__link{
+				color:#09C3A7;
+				transition: 0.5s;
+				font-size: 1.2rem;
+				display: flex;
+				justify-content: space-around;
+			}
+			&__card:last-child {
+        border-right : solid 0.5px solid;
+			}
+			&__card:nth-child(1):hover .second__slide__card__content__link {
+					color: #09C3A7;
+					transition: 1s;
+			}
+			&__card:nth-child(2):hover .second__slide__card__content__link{
+					color: #1D5F80;
+					transition: 1s;
+			}
+			&__card:nth-child(3):hover .second__slide__card__content__link{
+					color: #D83A37;
+					transition: 1s;
+			}
+			&__card:nth-child(4):hover .second__slide__card__content__link {
+					color: #FBA701;
+					transition: 1s;
+			}
+			&__card:nth-child(5):hover .second__slide__card__content__link {
+					color: #426855;
+					transition: 1s;
+			}
+			&__card:nth-child(6):hover .second__slide__card__content__link {
+					color: #32a5b4;
+					transition: 1s;
+			}
     }
  }

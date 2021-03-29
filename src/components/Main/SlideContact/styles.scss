@@ -156,5 +156,15 @@
 @media (max-width: 1200px) {
     .slideFive{
         width: 100%;
+        &__contain{
+            width: 90%;
+            &__contactForm{
+                width: 45%;
+            }
+        }
+        &__footer{
+            width: 90%;
+            font-size: 0.7rem;
+        }
     }
 }

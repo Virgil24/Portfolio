@@ -33,7 +33,10 @@
 .svg-inline--fa.fa-w-16 {
     width: 2rem;
 }
-
+.fa-chevron-circle-down {
+    height: 40px;
+    width: 40px;
+}
 .fa-times-circle{
     height: 40px;
     width: 40px;
@@ -41,9 +44,19 @@
 @media (max-width: 1200px) {
     .navigation{
         transform: none;
-        height: 100px;
+        justify-content: space-around;
+        height: 80px;
         width : 100vw;
         top : 0;
+        padding: 0;
+        font-size: 1rem;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation{
+        font-size: 0.8rem;
     }
 }
   
