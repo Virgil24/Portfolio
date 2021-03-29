@@ -38,7 +38,7 @@ module.exports = merge(common, {
             options: { publicPath: '../' },
           },
           {
-            test: /\.(jpe?g|gif|pdf)$/i,
+            test: /\.(jpe?g|gif)$/i,
             use: [
               {
                 loader: 'file-loader',
