@@ -2,6 +2,7 @@ import React from 'react';
 import Cursor from 'src/components/Main/Cursor';
 import SlidePresentation from 'src/components/Main/SlidePresentation';
 import Nav from 'src/containers/Nav';
+import NavResponsive from 'src/containers/NavResponsive';
 import SlideProjects from 'src/components/Main/SlideProjects';
 import SlideContact from 'src/components/Main/SlideContact';
 import SlideAbout from 'src/containers/SlideAbout';
@@ -14,6 +15,7 @@ const Main = ({ loading }) => (
   <div>
     <Cursor />
     <Nav />
+    <NavResponsive />
     <div className="outer-wrapper">
       <div className="outer-wrapper__wrapper">
         <SlidePresentation />

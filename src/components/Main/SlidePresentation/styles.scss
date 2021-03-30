@@ -132,13 +132,18 @@
 }
 @media (max-width: 768px) {
     .slide__one{
+        &__presentation{
+            font-size: 1.8rem;
+            letter-spacing: 0.5rem;
+        }
         &__container{
             &__card{
                 &__content{
-                    width: 60%;
+                    &__title{
+                    }
                 }
-                height: 80%;
             }
         }
+
     }
 }

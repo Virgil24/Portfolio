@@ -93,6 +93,16 @@
 
 }
 
+@media (max-width: 768px) {
+
+    .slideAboutResponsive{
+        &__section{
+            &__title{
+                font-size: 3rem;
+            }
+        }
+    }
+ }
 @media (min-width: 1200px) {
 
     .slideAboutResponsive{
