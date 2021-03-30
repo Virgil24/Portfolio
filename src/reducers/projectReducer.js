@@ -4,7 +4,7 @@ import { ANIMATE_MOUSE_OVER } from '../actions/slideTest';
 export const initialState = {
   backgroundColor: 'black',
   visibility: 'hidden',
-  toggle: true,
+  toggle: false,
   loading: true,
   animate: false,
 };
