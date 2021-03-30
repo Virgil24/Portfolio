@@ -125,7 +125,16 @@
 
 }
 
-
+@media (max-width: 1600px) {
+    .slideAbout{
+        min-width: 370vw;
+    }
+ }
+ @media (max-width: 1400px) {
+    .slideAbout{
+        min-width: 420vw;
+    }
+ } 
 @media (max-width: 1200px) {
 
    .slideAbout{

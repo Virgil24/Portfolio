@@ -61,12 +61,12 @@ body {
     .outer-wrapper{
         max-width :100%;
         width: 100%;
-        padding-right: 0;
     }
 }
 @media (max-width: 768px) {
     .outer-wrapper{
-        width: 100vw;
-        padding-right: 0;
+        overflow-x: hidden !important;
+        height: 100vh;
+        padding: 0;
     }
 }

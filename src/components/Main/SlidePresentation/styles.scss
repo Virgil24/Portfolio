@@ -68,7 +68,7 @@
                 color : #FBFBFD;
                 &__title{
                     font-size: 2rem;
-                    margin: 2rem;
+                    margin: 2rem 0;
                 }
                 &__text {
                     font-size: 1.2rem;
@@ -132,16 +132,46 @@
 }
 @media (max-width: 768px) {
     .slide__one{
+        min-height: 0;
         &__presentation{
-            font-size: 1.8rem;
-            letter-spacing: 0.5rem;
+            font-size: 3rem;
+            letter-spacing: 0rem;
+            text-align: left;
+            margin : 0.5rem;
+            &__subtitle{
+                text-align: left;
+                margin-left: 0.5rem;
+                font-size: 1.5rem;
+                letter-spacing: 0rem;
+            }
+            &__scroll{
+                display: none;
+            }
         }
         &__container{
+            margin-top: 1rem;
             &__card{
+                min-width: 90%;
+                margin: 1rem 0;
                 &__content{
                     &__title{
                     }
                 }
+            }
+            &__card:hover .slide__one__container__card__circle:before {
+                background: #b30b16;
+                clip-path: circle(600px at center);
+            }
+            &__card:hover .slide__one__container__card__picture {
+                transform: translate(-50%, -150%);
+                left : 85%;
+                height: 100px;
+            }
+            &__card:hover .slide__one__container__card__content {
+                left : 0;
+                width: 90%;
+                opacity: 1;
+                visibility: visible;
             }
         }
 

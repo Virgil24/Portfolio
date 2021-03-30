@@ -97,12 +97,31 @@
 
     .slideAboutResponsive{
         &__section{
+            min-width: 90%;
             &__title{
-                font-size: 3rem;
+                font-size: 4rem;
+                transform: translate(0,-10%);
+            }
+            &__box{
+                &__contains{
+                    &__imgBx{
+                        &__pic{
+                            display: block;
+                            transform: translate(0,0);
+                            width: 90%;
+                            margin: 0 auto;
+                        }
+                    }
+                    &__contentt{
+                        transform: translate(0,0);
+                        width: 90%;
+                    }
+                }
             }
         }
     }
  }
+ 
 @media (min-width: 1200px) {
 
     .slideAboutResponsive{
