@@ -11,8 +11,7 @@ const NavResponsive = ({ handleToggleOnClick, toggle }) => {
     <nav>
       {toggle && (
         <nav className="navigation__responsive">
-                    <div className="navigation__responsive__fakediv" onClick={switchToggleOnClick}/>
-
+          <div className="navigation__responsive__fakediv" onClick={switchToggleOnClick} />
           <div className="navigation__responsive__items">
             <a href="#presentation" className="navigation__responsive__item" onClick={switchToggleOnClick}>Accueil</a>
             <a href="#projects" className="navigation__responsive__item" onClick={switchToggleOnClick}>Projets</a>

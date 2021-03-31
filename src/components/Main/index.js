@@ -13,6 +13,7 @@ import './styles.scss';
 
 const Main = ({ loading }) => (
   <div>
+
     <Cursor />
     <Nav />
     <NavResponsive />

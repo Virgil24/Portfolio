@@ -12,7 +12,7 @@ const slideAbout = ({ launchAnimation, animate }) => {
   };
   return (
     <div>
-      <div className="slideAbout"  onMouseOver={launchAnimationOnMouseOver}>
+      <div id="about" className="slideAbout"  onMouseOver={launchAnimationOnMouseOver}>
         <section className="slideAbout__section">
           <h2 className="slideAbout__section__title slideAbout__section__title1"> À propos</h2>
           <div className="slideAbout__section__box">

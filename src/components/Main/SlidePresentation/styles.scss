@@ -115,6 +115,7 @@
         }
     }
 }
+
 @media (max-width: 1200px) {
     .slide__one{
         margin-top:5rem;
@@ -153,10 +154,6 @@
             &__card{
                 min-width: 90%;
                 margin: 1rem 0;
-                &__content{
-                    &__title{
-                    }
-                }
             }
             &__card:hover .slide__one__container__card__circle:before {
                 background: #b30b16;
@@ -164,6 +161,7 @@
             }
             &__card:hover .slide__one__container__card__picture {
                 transform: translate(-50%, -150%);
+                transition: none;
                 left : 85%;
                 height: 100px;
             }
@@ -176,4 +174,6 @@
         }
 
     }
+    
 }
+        
