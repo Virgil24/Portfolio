@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 /* eslint-disable no-tabs */
-import React from 'react';
+import React, { useEffect } from 'react';
 import './styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
@@ -49,7 +49,7 @@ const slideAboutResponsive = () => (
       <div className="slideAboutResponsive__section__box">
         <div className="slideAboutResponsive__section__box__contains">
           <div className="slideAboutResponsive__section__box__contains__imgBx">
-            <img className="slideAboutResponsive__section__box__contains__imgBx__pic slideAboutResponsive__section__box__contains__imgBx__pic3" src="https://images.pexels.com/photos/5740516/pexels-photo-5740516.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="iceberg" />
+            <img className="slideAboutResponsive__section__box__contains__imgBx__pic slideAboutResponsive__section__box__contains__imgBx__pic3" src="https://images.unsplash.com/photo-1591912419439-0b18c0a57b7e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHRlbm5pcyUyMHN0YWRpdW18ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="iceberg" />
           </div>
           <div className="slideAboutResponsive__section__box__contains__contentt slideAboutResponsive__section__box__contains__content3">
             <h3 className="slideAboutResponsive__section__box__contains__contentt__title"> Mes compétences côté Back-end</h3>
@@ -76,7 +76,7 @@ const slideAboutResponsive = () => (
               <li className="slideAboutResponsive__section__box__contains__contentt__list__item"> <FontAwesomeIcon icon={faAngleRight} /> Rédaction des documents nécessaires à la mise en place d'un projet, maquettage d'une application</li>
               <li className="slideAboutResponsive__section__box__contains__contentt__list__item"> <FontAwesomeIcon icon={faAngleRight} /> Répartition des tâches et utilisation d'un gestionnaire dédié : Github Project, Trello</li>
               <li className="slideAboutResponsive__section__box__contains__contentt__list__item"> <FontAwesomeIcon icon={faAngleRight} /> Versionning de project avec Github, utilisation de branches pour orgagniser le projet. </li>
-              <li className="slideAboutResponsive__section__box__contains__contentt__list__item" > <FontAwesomeIcon icon={faAngleRight} /> Méthodologie de travail dite agile, modèle scrum. </li>
+              <li className="slideAboutResponsive__section__box__contains__contentt__list__item"> <FontAwesomeIcon icon={faAngleRight} /> Méthodologie de travail dite agile, modèle scrum. </li>
             </ul>
           </div>
         </div>

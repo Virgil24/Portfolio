@@ -138,10 +138,8 @@
         &__presentation{
             font-size: 3rem;
             letter-spacing: 0rem;
-            text-align: left;
             margin : 0.5rem;
             &__subtitle{
-                text-align: left;
                 margin-left: 0.5rem;
                 font-size: 1.5rem;
                 letter-spacing: 0rem;
@@ -175,6 +173,8 @@
         }
 
     }
-    
+    .nohover{
+        pointer-events: none;
+    }
 }
         

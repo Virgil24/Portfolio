@@ -12,7 +12,7 @@ const slideAbout = ({ launchAnimation, animate }) => {
   };
   return (
     <div>
-      <div id="about" className="slideAbout"  onMouseOver={launchAnimationOnMouseOver}>
+      <div id="about" className="slideAbout" onMouseOver={launchAnimationOnMouseOver}>
         <section className="slideAbout__section">
           <h2 className="slideAbout__section__title slideAbout__section__title1"> À propos</h2>
           <div className="slideAbout__section__box">
@@ -21,7 +21,7 @@ const slideAbout = ({ launchAnimation, animate }) => {
                 <img className="slideAbout__section__box__contains__imgBx__pic" src="https://images.pexels.com/photos/1840794/pexels-photo-1840794.png?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="grandcanyon" />
               </div>
               <div className="slideAbout__section__box__contains__contentt slideAbout__section__box__contains__content1">
-                <h3 className="slideAbout__section__box__contains__contentt__title" > Mon Profil</h3>
+                <h3 className="slideAbout__section__box__contains__contentt__title"> Mon Profil</h3>
                 {animate && (
                 <Typewriter
                   wrapperClassName="slideAbout__section__box__contains__contentt__text"
@@ -63,7 +63,7 @@ const slideAbout = ({ launchAnimation, animate }) => {
           <div className="slideAbout__section__box">
             <div className="slideAbout__section__box__contains">
               <div className="slideAbout__section__box__contains__imgBx slideAbout__section__box__contains__image3">
-                <img className="slideAbout__section__box__contains__imgBx__pic" src="https://images.pexels.com/photos/5740516/pexels-photo-5740516.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="tennis" />
+                <img className="slideAbout__section__box__contains__imgBx__pic" src="https://images.unsplash.com/photo-1591912419439-0b18c0a57b7e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHRlbm5pcyUyMHN0YWRpdW18ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="tennis" />
               </div>
               <div className="slideAbout__section__box__contains__contentt slideAbout__section__box__contains__content3">
                 <h3 className="slideAbout__section__box__contains__contentt__title"> Mes compétences côté Back-end</h3>

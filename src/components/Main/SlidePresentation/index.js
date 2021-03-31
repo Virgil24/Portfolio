@@ -15,7 +15,7 @@ const SlidePresentation = () => (
   <div id="first__slide" className="slide__one" id="presentation">
     <h1 className="slide__one__presentation">Virgil Kwiatkowski</h1>
     <h2 className="slide__one__presentation__subtitle">Developpeur Web FullStack Junior</h2>
-    <div className="slide__one__container">
+    <div className="slide__one__container nohover">
       <div className="slide__one__container__card">
         <div className="slide__one__container__card__circle" />
         <div className="slide__one__container__card__content">
