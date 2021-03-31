@@ -55,7 +55,15 @@
 
 @media (max-width: 768px) {
     .navigation{
-        display: none;
+        font-size: 0.6rem;
+        height: 60px;
+        &__item{
+            margin: 1rem;
+        }
+        &__item:hover{
+            border-top: none;
+            border-bottom: 1px solid white;
+        }
     }
 }
   

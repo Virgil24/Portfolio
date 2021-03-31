@@ -26,7 +26,6 @@ const NavResponsive = ({ handleToggleOnClick, toggle }) => {
     </nav>
 
   );
-  // if the device size is under ipad display toggle menu
 };
 
 export default NavResponsive;

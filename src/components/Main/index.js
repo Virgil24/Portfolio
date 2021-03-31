@@ -16,7 +16,8 @@ const Main = ({ loading }) => (
 
     <Cursor />
     <Nav />
-    <NavResponsive />
+    {/* can use burger menu instead */}
+    {/* <NavResponsive /> */}
     <div className="outer-wrapper">
       <div className="outer-wrapper__wrapper">
         <SlidePresentation />
