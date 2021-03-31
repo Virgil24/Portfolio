@@ -41,6 +41,9 @@
     height: 40px;
     width: 40px;
 }
+.aboutResponsive{
+    display: none;
+}
 @media (max-width: 1200px) {
     .navigation{
         transform: none;
@@ -51,9 +54,15 @@
         padding: 0;
         font-size: 1rem;
     }
+    .aboutDesktop{
+        display: none;
+    }
+    .aboutResponsive{
+        display: block;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .navigation{
         font-size: 0.6rem;
         height: 60px;

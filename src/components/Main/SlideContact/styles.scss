@@ -165,7 +165,9 @@
         &__footer{
             width: 90%;
             font-size: 0.7rem;
+            bottom : 0;
         }
+        margin-bottom: 0;
     }
 }
 @media (max-width: 768px) {

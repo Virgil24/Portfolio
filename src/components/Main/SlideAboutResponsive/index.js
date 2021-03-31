@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 const slideAboutResponsive = () => (
-  <div className="slideAboutResponsive" id="about">
+  <div id="aboutResponsive" className="slideAboutResponsive">
     <section className="slideAboutResponsive__section">
       <h2 className="slideAboutResponsive__section__title slideAboutResponsive__section__title1"> À propos</h2>
       <div className="slideAboutResponsive__section__box">
@@ -76,7 +76,7 @@ const slideAboutResponsive = () => (
               <li className="slideAboutResponsive__section__box__contains__contentt__list__item"> <FontAwesomeIcon icon={faAngleRight} /> Rédaction des documents nécessaires à la mise en place d'un projet, maquettage d'une application</li>
               <li className="slideAboutResponsive__section__box__contains__contentt__list__item"> <FontAwesomeIcon icon={faAngleRight} /> Répartition des tâches et utilisation d'un gestionnaire dédié : Github Project, Trello</li>
               <li className="slideAboutResponsive__section__box__contains__contentt__list__item"> <FontAwesomeIcon icon={faAngleRight} /> Versionning de project avec Github, utilisation de branches pour orgagniser le projet. </li>
-              <li className="slideAboutResponsive__section__box__contains__contentt__list__item"> <FontAwesomeIcon icon={faAngleRight} /> Méthodologie de travail dite agile, modèle scrum. </li>
+              <li className="slideAboutResponsive__section__box__contains__contentt__list__item" > <FontAwesomeIcon icon={faAngleRight} /> Méthodologie de travail dite agile, modèle scrum. </li>
             </ul>
           </div>
         </div>

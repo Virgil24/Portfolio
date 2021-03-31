@@ -1,6 +1,16 @@
 .second__slide{
     font-family: 'NewsReader';
     display: inline-flex;
+    &__title{
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        text-transform: uppercase;
+        padding: 4rem;
+        background-color: black;
+        color: white;
+        font-size: 2rem;
+        letter-spacing: 2rem;
+    }
     &__card{
         width: 30vw;
         height: 100vh;
@@ -89,6 +99,11 @@
 
 @media (max-width: 1200px) {
     .second__slide{
+        &__title{
+            writing-mode: horizontal-tb;
+            text-align: center;                    
+
+        }
       display: flex;
       flex-direction: column;
       margin: 4rem 0;
@@ -149,6 +164,12 @@
 
  @media (max-width: 768px) {
     .second__slide{
+        &__title{
+            font-size: 1.4rem;
+            letter-spacing: 1rem;
+            padding: 2rem ;
+            text-align: center;                    
+        }
         &__card{
             &__image{
                 height: 40%;

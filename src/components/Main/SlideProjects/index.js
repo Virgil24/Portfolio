@@ -6,6 +6,7 @@ import { faGlobe, faCode } from '@fortawesome/free-solid-svg-icons';
 
 const SlideProjects = ({ projects }) => (
   <div className="second__slide" id="projects">
+    <h2 className="second__slide__title">Mes projets</h2>
     {projects.map((project) => (
       <div className="second__slide__card" key={project.id}>
         <img className="second__slide__card__image" src={project.picture} alt="amanger" />

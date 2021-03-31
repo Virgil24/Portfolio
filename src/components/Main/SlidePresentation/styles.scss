@@ -131,8 +131,9 @@
         }
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .slide__one{
+        margin-top: 10rem;
         min-height: 0;
         &__presentation{
             font-size: 3rem;
