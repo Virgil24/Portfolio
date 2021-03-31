@@ -9,7 +9,7 @@
         background-color: black;
         color: white;
         font-size: 2rem;
-        letter-spacing: 2rem;
+        letter-spacing: 1.5rem;
         height: 100vh;
     }
     &__card{
@@ -106,8 +106,8 @@
     .second__slide{
         &__title{
             writing-mode: horizontal-tb;
-            text-align: center;                    
-
+            text-align: center;
+            height: auto;                    
         }
       display: flex;
       flex-direction: column;

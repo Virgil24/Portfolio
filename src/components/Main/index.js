@@ -11,9 +11,8 @@ import projectsData from 'src/data/projects';
 
 import './styles.scss';
 
-const Main = ({ loading }) => (
+const Main = () => (
   <div>
-
     <Cursor />
     <Nav />
     {/* can use burger menu instead */}

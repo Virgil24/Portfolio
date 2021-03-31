@@ -1,5 +1,5 @@
 import { HANDLE_TOGGLE } from '../actions/nav';
-import { ANIMATE_MOUSE_OVER } from '../actions/slideTest';
+import { ANIMATE_MOUSE_OVER } from '../actions/slideAbout';
 
 export const initialState = {
   backgroundColor: 'black',

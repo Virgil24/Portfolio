@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import slideAbout from '../components/Main/SlideAbout';
-import { launchAnimation } from '../actions/slideTest';
+import { launchAnimation } from '../actions/slideAbout';
 
 const mapStateToProps = (state) => (
   {
