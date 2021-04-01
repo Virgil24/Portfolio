@@ -1,7 +1,8 @@
 .slideAboutResponsive{
     padding: 5rem 0; 
-    font-family: 'NewsReader';
-    background: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+        background: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     &__section{
@@ -14,6 +15,7 @@
             -webkit-text-stroke: 1px rgb(212, 211, 211);
             z-index: 2;
             text-align: center;
+            font-family: 'NewsReader';
             transform: translate(50px,-30px);
         }
         &__box{
@@ -64,6 +66,7 @@
                         margin-bottom: 2rem;
                         text-align: center;
                         color : rgb(26, 26, 26);
+                        font-family: 'NewsReader';
                     }
                     &__list{
                         &__item{
@@ -86,7 +89,7 @@
     text-align: justify;
 }
 .Typewriter__wrapper >a{
-    color : #b30b16;
+    color : black;
     cursor: none;
 }
 .fa-angle-right{

@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMouse } from '@fortawesome/free-solid-svg-icons';
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos';
 import virgil from './virgilfinal.png';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -19,7 +19,7 @@ const SlidePresentation = () => (
       <div className="slide__one__container__card">
         <div className="slide__one__container__card__circle" />
         <div className="slide__one__container__card__content">
-          <h3 className="slide__one__container__card__content__title"> Bienvenue sur mon Portfolio</h3>
+          <h3 className="slide__one__container__card__content__title">Bienvenue sur mon Portfolio</h3>
           <p className="slide__one__container__card__content__text">Je m'appelle Virgil, j'ai 27 ans, j'habite en haute-loire, au Puy-en-Velay.</p>
           <p className="slide__one__container__card__content__text">Les présentations étants faites, je vous laisse découvrir mon profil, qui je l'espère saura attirer votre attention.</p>
           <a className="slide__one__container__card__content__button" href="#contact"> Contactez-moi</a>
@@ -30,7 +30,7 @@ const SlidePresentation = () => (
     <div
       data-aos="zoom-in-up"
       className="slide__one__presentation__scroll"
-    >Scroll <FontAwesomeIcon icon={faMouse} />
+    >Scroll <FontAwesomeIcon icon={faArrowCircleRight} />
     </div>
   </div>
 );

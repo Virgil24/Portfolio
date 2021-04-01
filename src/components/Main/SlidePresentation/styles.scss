@@ -1,6 +1,7 @@
 @use "src/styles/vars" as v;
 .slide__one{
-    font-family: 'Newsreader';
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
     min-height: 100vh;
     min-width: 100vw;
     &__presentation{
@@ -20,14 +21,14 @@
         &__scroll{
             text-align: center;
             font-size: 1.5rem;
-            margin-top: -5rem;
+            margin-top: -2rem;
         }
     }
     &__container{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 5rem;
+        margin-top: 3rem;
         &__card {
             position: relative;
             width: 40%;
@@ -59,6 +60,7 @@
                 
             }
             &__content{
+                font-family: 'Inter', sans-serif;
                 position: relative;
                 width : 50%;
                 left : 20%;
@@ -101,7 +103,7 @@
             }
         }
         &__card:hover .slide__one__container__card__circle:before {
-            background: #b30b16;
+            background: #29648A;
             clip-path: circle(600px at center);
         }
         &__card:hover .slide__one__container__card__picture {

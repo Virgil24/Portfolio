@@ -11,15 +11,15 @@
     background: #fff;
     background-size: cover;
     margin-bottom: 30%;
-    font-family: 'NewsReader';
-    &__contentForm{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+        &__contentForm{
         max-width: 70%;
         text-align: center;
         margin-bottom: 5rem;
         &__title{
             margin-top: 2rem;
             font-size: 3rem;
-            font-weight: 500;
             color : #000;
             text-transform: uppercase;
             margin-bottom: 6rem;
@@ -32,7 +32,7 @@
             line-height: 1.5rem;
             text-align: justify;
             &__link{
-                color:#b30b16;
+                color:#29648A;
                 cursor: none;
             }
         }
@@ -72,7 +72,7 @@
                     font-weight: 300;
                     &__title{
                         font-weight: 500;
-                        color: #b30b16;
+                        color: #29648A;
                     }
                 }
             }
@@ -88,7 +88,7 @@
                 font-size: 1.4rem;
                 text-transform: uppercase;
                 margin-bottom: 2rem;
-                color: #b30b16;
+                color: #29648A;
                 font-weight: 500;
             }
             &__inputBox{
@@ -120,7 +120,7 @@
                     margin: 0.5rem 0;
                     pointer-events: none;
                     transition: 0.5s;
-                    color: #b30b16;
+                    color: #29648A;
                     font-size: 0.8rem;
                 }
             }
@@ -128,7 +128,7 @@
                 margin: 1rem 0;
                 &__message{
                     width: 30%;
-                    background: #b30b16;
+                    background: #29648A;
                     color:#fff;
                     border: none;
                     border-radius: 5px;

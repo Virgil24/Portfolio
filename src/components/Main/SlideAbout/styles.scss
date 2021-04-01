@@ -1,9 +1,10 @@
 @use "src/styles/vars" as v;
 .slideAbout{
-    font-family: 'NewsReader';
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
     background: black;
     min-height: 100vh;
-    min-width: 330vw;
+    width: 330vw;
     display: flex;
     &__section{
         position: relative; 
@@ -13,6 +14,7 @@
         min-height: 100vh;
         margin-left: 5%;
         &__title{
+            font-family: 'NewsReader';
             position: fixed;
             // might be useful for responsive
             // top 50% left 50%
@@ -45,7 +47,7 @@
                     position: relative;
                     width: 700px;
                     height: 400px;
-                    box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+                    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
                     object-fit: contain;
                     &__pic{
                         position: absolute;
@@ -72,12 +74,12 @@
                     position: absolute;
                     right:0;
                     padding: 40px;
-                    background: #555; 
+                    background: rgb(255, 254, 254); 
                     margin-bottom: 2rem;
                     z-index: 1;
                     width: 500px;
                     height:300px;
-                    color: #fff;
+                    color: #555;
                     box-shadow: 0 25px 35px rgba(0,0,0,0.1);
                     transform: translate(0%,0%);
                     &__title{
@@ -93,6 +95,9 @@
                                 color : black;
                             }
                         }
+                    }
+                    &__text{
+                        line-height: 1.5rem;
                     }
                 }
                 &__content1{
@@ -117,11 +122,11 @@
     text-align: justify;
 }
 .Typewriter__wrapper >a{
-    color : #b30b16;
+    color : #29648A;
     cursor: none;
 }
 .fa-angle-right{
-    color : #b30b16;
+    color : #29648A;
 
 }
 

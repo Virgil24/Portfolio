@@ -1,5 +1,6 @@
 .second__slide{
-    font-family: 'NewsReader';
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
     display: inline-flex;
     &__title{
         writing-mode: vertical-rl;
@@ -44,7 +45,6 @@
                 margin : 0.5rem 2rem;
                 line-height: 1.5rem;
                 color: white;
-                font-size: 1.2rem;
             }
             &__item{
                 margin-bottom: 1rem;
@@ -54,8 +54,11 @@
                 line-height: 1.5rem;
                 color: white;
                 display: flex;
-                font-size: 1.2rem;
+                font-weight: 500;
                 justify-content: space-around;
+            }
+            &__link p{
+                border-bottom: 1px solid white;
             }
         }
     }
@@ -71,7 +74,7 @@
         transition: 1s;
     }
     &__card:nth-child(3):hover {
-        background: #D83A37;
+        background: #7c5138;
         transition: 1s;
     }
     &__card:nth-child(4):hover {
@@ -136,7 +139,6 @@
 			&__card:hover .second__slide__card__content__link{
 				color:#09C3A7;
 				transition: 0.5s;
-				font-size: 1.2rem;
 				display: flex;
 				justify-content: space-around;
 			}
@@ -149,7 +151,7 @@
 					transition: 1s;
 			}
 			&__card:nth-child(3):hover .second__slide__card__content__link{
-					color: #D83A37;
+					color: #7c5138;
 					transition: 1s;
 			}
 			&__card:nth-child(4):hover .second__slide__card__content__link {

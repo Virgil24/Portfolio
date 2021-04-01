@@ -28,9 +28,8 @@ export default [
     stackFront: 'ReactJs - Redux - Sass',
     stackBack: '/',
     picture: 'https://images.unsplash.com/photo-1613748247129-ba2a38d6fc5e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8YWV1NnJMLWo2ZXd8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-    website: 'https://github.com/Virgil24/Portfolio',
-    github: 'https://virgil-kwiatkowski.netlify.app/',
-
+    website: 'https://virgil-kwiatkowski.netlify.app/',
+    github: 'https://github.com/Virgil24/Portfolio',
   },
   {
     id: 4,
