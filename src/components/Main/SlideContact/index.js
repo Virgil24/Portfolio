@@ -64,7 +64,7 @@ const SlideContact = () => {
             <div className="slideFive__contain__contactInfos__box__icon"> <a href="https://www.google.fr/maps/place/Boulevard+Carnot,+43000+Le+Puy-en-Velay/@45.0437772,3.87991,16.06z/data=!4m5!3m4!1s0x47f5fbaaa30387f1:0x8a499e54e4d39663!8m2!3d45.0459348!4d3.8794813" target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faMapMarkerAlt} /> </a> </div>
             <div className="slideFive__contain__contactInfos__box__text">
               <h3 className="slideFive__contain__contactInfos__box__text__title">Adresse</h3>
-              <p className="slideFive__contain__contactInfos__box__text__content"> <a href="https://www.google.fr/maps/place/Boulevard+Carnot,+43000+Le+Puy-en-Velay/@45.0437772,3.87991,16.06z/data=!4m5!3m4!1s0x47f5fbaaa30387f1:0x8a499e54e4d39663!8m2!3d45.0459348!4d3.8794813" target="_blank" rel="noreferrer">Boulevard Carnot, Le-Puy-En-Velay <br />43000 <br />Le-Puy-En-Velay</a></p>
+              <p className="slideFive__contain__contactInfos__box__text__content"> <a href="https://www.google.fr/maps/place/Boulevard+Carnot,+43000+Le+Puy-en-Velay/@45.0437772,3.87991,16.06z/data=!4m5!3m4!1s0x47f5fbaaa30387f1:0x8a499e54e4d39663!8m2!3d45.0459348!4d3.8794813" target="_blank" rel="noreferrer">Boulevard Carnot, <br />43000, <br />Le-Puy-En-Velay</a></p>
             </div>
           </div>
           <div className="slideFive__contain__contactInfos__box">
