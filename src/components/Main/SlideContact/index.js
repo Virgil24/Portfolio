@@ -55,7 +55,7 @@ const SlideContact = () => {
     <div className="slideFive">
       <div className="slideFive__contentForm">
         <h2 className="slideFive__contentForm__title" id="contact">Me contacter</h2>
-        <p className="slideFive__contentForm__text">Je suis aujourd'hui à la recherche d'une alternance afin d'intégrer la licence proffessionnelle <a className="slideFive__contentForm__text__link" href="https://iut.uca.fr/formations/lp-metiers-du-numerique-conception-redaction-et-realisation-web">Conception, rédaction et réalisation web : option développement web</a> pour l'année académique 2021-2022 (Septembre-Juin), n'hésitez pas à me contacter pour tout renseignement que vous souhaiteriez obtenir. <br /><br /> Je suis également disponible pour discuter de tout ce qui tourne autour du développement.
+        <p className="slideFive__contentForm__text">Je suis aujourd'hui à la recherche d'une alternance afin d'intégrer la licence professionnelle <a className="slideFive__contentForm__text__link" href="https://iut.uca.fr/formations/lp-metiers-du-numerique-conception-redaction-et-realisation-web">Conception, rédaction et réalisation web : option développement web</a> pour l'année académique 2021-2022 (Septembre-Juin), n'hésitez pas à me contacter pour tout renseignement que vous souhaiteriez obtenir. <br /><br /> Je suis également disponible pour discuter de tout ce qui tourne autour du développement.
         </p>
       </div>
       <div className="slideFive__contain">
