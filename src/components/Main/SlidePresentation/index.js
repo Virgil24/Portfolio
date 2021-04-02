@@ -2,14 +2,7 @@ import React from 'react';
 import './styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
-import AOS from 'aos';
 import virgil from './virgilfinal.png';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-
-// ..
-AOS.init({
-  duration: 1000,
-});
 
 const SlidePresentation = () => (
   <div id="first__slide" className="slide__one" id="presentation">
@@ -28,7 +21,6 @@ const SlidePresentation = () => (
       </div>
     </div>
     <div
-      data-aos="zoom-in-up"
       className="slide__one__presentation__scroll"
     >Scroll <FontAwesomeIcon icon={faArrowCircleRight} />
     </div>
