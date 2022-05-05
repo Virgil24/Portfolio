@@ -18,7 +18,9 @@ const SlideProjects = ({ projects }) => (
             <p> Techno back-end : {project.stackBack} </p>
           </div>
           <div className="second__slide__card__content__link">
-            <p> <a href={project.website} target="_blank" rel="noreferrer">Voir le site : <FontAwesomeIcon icon={faGlobe} /> </a></p>
+            {project.website && <p> <a href={project.website} target="_blank" rel="noreferrer">Voir le site : <FontAwesomeIcon icon={faGlobe} /> </a></p>}
+            {project.video && <p> <a href={project.video} target="_blank" rel="noreferrer">Vidéo de présentation : <FontAwesomeIcon icon={faGlobe} /> </a></p>}
+
             <p> <a href={project.github} target="_blank" rel="noreferrer">Code source : <FontAwesomeIcon icon={faCode} /></a></p>
           </div>
         </div>
