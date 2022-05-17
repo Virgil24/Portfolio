@@ -19,7 +19,7 @@ export default [
     stackBack: 'PHP - Symfony, API Platform',
     picture: 'https://media.istockphoto.com/photos/ridesharing-picture-id1175196895?b=1&k=20&m=1175196895&s=170667a&w=0&h=IPKgYT8mjGYTQ0wJP1hJTFkiDswayzhOuHvAIsTshBM=',
     website: undefined,
-    github: 'https://gitlab.com/kwiatkowski.virgil/rankekofront',
+    github: 'https://gitlab.com/kwiatkowski.virgil/rankekofront/-/tree/develop',
     video: 'https://drive.google.com/file/d/1RzR6YLfro9w-tY3fXiVSeCxNvuDraP3l/view?usp=sharing',
   },
   {

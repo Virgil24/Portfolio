@@ -30,7 +30,7 @@ const slideAbout = ({ launchAnimation, animate }) => {
                       .typeString('Organisé, rigoureux et motivé,')
                       .pauseFor(300)
                       .deleteAll(20)
-                      .pasteString('Après 5 ans passés à l\'étranger pour autant d\'années travaillées dans le secteur du service client, j\'ai choisi d\'entamer une reconversion professionelle dans le secteur du développement web en Juin 2020.<br/> J\'ai donc suivi une formation de 5 mois auprès de l\'école O\'clock. J\'ai ensuite intégré une licence Professionnelle option développement web en alternance aurès de l\'entreprise Open Studio')
+                      .pasteString('Après 5 ans passés à l\'étranger pour autant d\'années travaillées dans le secteur du service client, j\'ai choisi d\'entamer une reconversion professionelle dans le secteur du développement web en Juin 2020.<br/> J\'ai donc suivi une formation de 5 mois auprès de l\'école O\'clock. J\'ai ensuite intégré une licence Professionnelle option développement web en alternance auprès de l\'entreprise Open Studio')
                       .start();
                   }}
                 />
